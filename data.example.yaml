@@ -1,0 +1,11 @@
+# YOLO dataset definition for trade-specific equipment.
+path: ../datasets/workshop
+train: images/train
+val: images/val
+names:
+  0: person
+  1: workbench
+  2: lathe
+  3: welding_set
+  4: sewing_machine
+  5: computer

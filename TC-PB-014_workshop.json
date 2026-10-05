@@ -1,0 +1,28 @@
+{
+  "centre_id": "TC-PB-014",
+  "camera_id": "CAM-02",
+  "device_key": "dev-TC-PB-014",
+  "enrolled_batch_size": 20,
+  "sanctioned_inventory": {
+    "workbench": 6,
+    "lathe": 2,
+    "welding_set": 2
+  },
+  "class_map": {
+    "person": ["person"],
+    "workbench": ["dining table", "workbench"],
+    "lathe": ["lathe"],
+    "welding_set": ["welding_set"]
+  },
+  "roi": null,
+  "zones": [
+    {"id": "lathe-1", "item": "lathe", "polygon": [[0.05, 0.45], [0.30, 0.45], [0.30, 0.85], [0.05, 0.85]]},
+    {"id": "lathe-2", "item": "lathe", "polygon": [[0.32, 0.45], [0.55, 0.45], [0.55, 0.85], [0.32, 0.85]]},
+    {"id": "welding_set-1", "item": "welding_set", "polygon": [[0.70, 0.55], [0.85, 0.55], [0.85, 0.90], [0.70, 0.90]]},
+    {"id": "welding_set-2", "item": "welding_set", "polygon": [[0.86, 0.55], [0.99, 0.55], [0.99, 0.90], [0.86, 0.90]]}
+  ],
+  "baseline_image": "config/baselines/TC-PB-014_CAM-02.jpg",
+  "detector": {"weights": "models/workshop_v1.pt", "conf": 0.35, "imgsz": 640},
+  "sampling": {"every_s": 3},
+  "tamper": {}
+}

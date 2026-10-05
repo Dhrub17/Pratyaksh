@@ -1,0 +1,24 @@
+{
+  "centre_id": "TC-KA-001",
+  "camera_id": "CAM-01",
+  "device_key": "dev-TC-KA-001",
+  "enrolled_batch_size": 30,
+  "sanctioned_inventory": {
+    "computer": 20,
+    "seating": 30
+  },
+  "class_map": {
+    "person": ["person", "head"],
+    "computer": ["tv", "laptop"],
+    "seating": ["chair", "bench", "couch"],
+    "workbench": ["dining table"]
+  },
+  "roi": [[0.0, 0.15], [1.0, 0.15], [1.0, 1.0], [0.0, 1.0]],
+  "zones": [],
+  "baseline_image": "config/baselines/TC-KA-001_CAM-01.jpg",
+  "detector": {"weights": "yolo11n.pt", "conf": 0.35, "imgsz": 640},
+  "sampling": {"every_s": 3},
+  "presence": {"sustained_ratio": 0.6},
+  "inventory": {"missing_tolerance": 0.1, "idle_threshold": 0.25},
+  "tamper": {"dark_brightness": 28, "blur_laplacian": 12}
+}
